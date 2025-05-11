@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: video-splitter-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run video_splitter_app.py --server.port $PORT
